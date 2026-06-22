@@ -72,7 +72,7 @@ class RAGBase:
             input=input_messages
         )
 
-        return response.output_text
+        return response.output_text, response.usage.input_tokens, response.usage.output_tokens
 
     def rag(self, query):
         search_results = self.search(query)
