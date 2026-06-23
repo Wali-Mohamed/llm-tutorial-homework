@@ -1,4 +1,8 @@
 .env
 .venv
 
-.txt
+*.txt
+
+.ipynb_checkpoints/
+*.py.[0-9]
+.DS_Store
