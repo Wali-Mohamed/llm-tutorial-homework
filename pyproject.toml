@@ -8,6 +8,7 @@ dependencies = [
     "gitsource>=0.0.5",
     "minsearch>=0.1.0",
     "openai>=2.41.1",
+    "psycopg>=3.3.4",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
     "sentence-transformers>=5.6.0",
