@@ -1,13 +1,13 @@
 
 
-make run:
+run:
 	uv run python assistant.py
 
 chat:
 	uv run streamlit run app.py
 
 network:
-	docker network create monitoring
+	docker network create monitoring || true
 
 postgres: network
 	docker run -it \
@@ -23,3 +23,11 @@ postgres: network
 
 query:
 	uv run python db_query.py
+
+grafan:
+	docker run -d \
+    --name grafana \
+    --network monitoring \
+    -p 3000:3000 \
+    -v grafana_data:/var/lib/grafana \
+    grafana/grafana
