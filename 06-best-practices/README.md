@@ -30,3 +30,6 @@ There's no homework for this module.
 ## Notes
 
 - Did you take notes? Add them above this line (Send a PR with *links* to your notes)
+
+curl -O $PREFIX/rag_helper.py
+curl -O $PREFIX/starter.py
