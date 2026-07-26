@@ -26,3 +26,10 @@ dev = [
     "jupyter>=1.1.1",
     "notebook>=7.6.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "05-monitoring/llm-zoomcamp-hw5",
+    "workshops/dlt/claude-log-pipeline",
+    "workshops/dlt/gemini-log-pipeline",
+]
